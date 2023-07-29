@@ -1,0 +1,141 @@
+
+body{
+    font-family: Roboto;
+    color: #132B40;
+    background-color: #f7f5f5;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #337AA6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0% 3%;
+  }
+  
+  
+  img {
+    margin-top: 2%;
+  }
+  
+  .right {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  
+    
+    option {
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 0.9rem;
+    }
+    
+    .left {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    #home {
+    margin-top: 2px;
+    color: white;
+    text-decoration: none;
+    }
+    .navbar-icons ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+        }
+    .navbar-icons ul a {
+        display: flex;
+        list-style: none;
+        margin: 10px;
+        padding: 0;
+        }
+    .cart-title{
+        text-align: center;
+        margin-top: 50px;
+    }
+    .cart-title h1{
+        font-size: 40px;
+    }
+    .cart-title a{
+    color: black;   
+    }
+
+    .cart-page{
+        margin: 80px auto;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+    table{
+        width: 100%;
+    }
+    .cart-info{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    th{
+        text-align: left;
+        padding: 5px;
+        color: white;
+        background: #337AA6;
+    }
+    td{
+        padding: 10px 5px;
+    }
+    td input{
+        width: 40px;
+        height: 30px;
+        padding: 5px;
+    }
+    td button{
+        color: #337AA6;
+        font-weight: bold;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    td img{
+        width: 200px;
+        height: 200px;
+        margin-right: 50px;
+    }
+    .total-price{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .total-price table{
+        border-top:3px solid #337AA6 ;
+        width: 100%;
+        max-width: 200px;
+    }
+    td:last-child{
+        text-align: right;
+    }
+    th:last-child{
+        text-align: right;
+    }
+
+    #purchase{
+        display: flex;
+        justify-content: flex-end;
+    }
+    #purchase-btn, #reset-cart, #place-order{
+        width: 100px;
+        height: 25px;
+        color: #337AA6;
+        font-weight: bold;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-radius: 15px;
+    }
