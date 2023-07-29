@@ -1,0 +1,148 @@
+
+body{
+    font-family: Roboto;
+    color: #132B40;
+    background-color: #f7f5f5;
+    margin: 0;
+   
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #337AA6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0% 3%;
+  }
+  
+  img {
+    margin-top: 2%;
+  }
+  
+  .right {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  
+option {
+cursor: pointer;
+background-color: white;
+ font-weight: bold;
+font-family: Roboto;
+font-size: 0.9rem;
+  }
+  
+.left {
+display: flex;
+ gap: 30px;
+ justify-content: center;
+ align-items: center;
+  }
+  
+#home {
+margin-top: 2px;
+color: white;
+text-decoration: none;
+  }
+.navbar-icons ul{
+ display: flex;
+list-style: none;
+justify-content: space-between;
+    }
+.navbar-icons ul a {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    }
+
+.form{
+  border: 10px solid #337AA6;
+  border-radius: 30px;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: -5px -5px 15px #337AA6,
+  5px 5px 15px #337AA6;
+  width:fit-content;
+ 
+  margin-top: 30px;
+}
+.Login-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;   
+  margin-top: 30px;
+  
+}
+
+.Login-title{
+    font-size: 50px;
+}
+
+
+.Login-description{
+    max-width: 500px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+#Email, #Password  {
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 60%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.Pointing-to-forgetpassword{
+    width: 30%;
+    font-size: 12px;
+    text-align: center;
+}
+
+#Signin{
+    background-color: #337AA6;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+#Signin:hover{
+  transform: scale(1.2);
+}
+form{
+  border: 10px solid #337AA6;
+  border-radius: 30px;
+  transition: all 0.1s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: -5px -5px 15px #337AA6,
+  5px 5px 15px #337AA6;
+  width:fit-content;
+  margin-left: 150px;
+  margin-top: 50px;
+  padding: 20px;
+}
+#forgot-password-input{
+padding: 10px;
+font-size: 20px;
+}
