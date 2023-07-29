@@ -28,7 +28,6 @@ body{
     margin-top: 4px;
   }
   
-    
     option {
     cursor: pointer;
     background-color: white;
@@ -68,7 +67,7 @@ body{
         font-size: 40px;
     }
     .cart-title a{
-    color: black;   
+        color: black;   
     }
 
     .cart-page{

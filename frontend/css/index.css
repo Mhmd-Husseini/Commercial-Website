@@ -245,3 +245,22 @@ body{
       
     }
     
+    @media screen and (max-width: 768px) {
+      .navbar{
+      font-size: 15px;}
+      img{
+        width: 50%;
+        height: 50%;
+        display: block;
+      }
+      footer img{
+        max-width: 70px;
+        max-height: 50px;
+      }
+      .sale{
+        margin-top: 100px;
+      }
+      .float_picture img{
+        margin-top: 40px;
+      }
+      }
