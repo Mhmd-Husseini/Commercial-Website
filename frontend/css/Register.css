@@ -4,6 +4,7 @@ body{
     color: #132B40;
     background-color: #f7f5f5;
     margin: 0;
+    width:100vw;
   }
   .navbar {
     display: flex;
