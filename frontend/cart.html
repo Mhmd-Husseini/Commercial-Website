@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop-page</title>
+    <link rel="stylesheet" href="css/laptops.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="left">
+              <img id="logo" width=60px height=50px src="assets\logo.jpg">
+              <a id="home" href="index.html">Home</a>
+            </div>
+            <div class="right">
+              <div class="navbar-icons">
+                <ul>
+                  <li><a href=# class="fa fa-heart-o" style="color: white;"></a></li>
+                  <li><a href="cart.html" id="c" class="fa fa-shopping-cart" style="color: white;" ></a></li>
+                  <li><a href="profile.html" class="fa fa-user-circle-o"style="color: white;"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+      
+
+    <div class="cart-title">
+        <h1>MY Starforge Cart</h1>
+        <a href="index.html">Continue Shopping</a>
+    </div>
+    
+    <div class="small-container cart-page" >
+        <table>
+            <thead>
+              <tr>
+                <th>Item ID</th>
+                <th>Price</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="cart-items">
+
+            </tbody>    
+          </table>
+          
+          <button id="place-order">Place Order</button>
+          <input type="text" id="shipping-address" width="200px" height="100px" placeholder="Enter Shipping Address">
+          <div>
+          <button id="reset-cart">Reset Cart</button></div>
+
+</body>
+</html>
