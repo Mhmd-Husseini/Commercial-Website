@@ -1,0 +1,247 @@
+body{
+    font-family: Roboto;
+    color: white;
+    background-color: #f7f5f5;
+    margin: 0;
+    width: 100vw;
+    
+  }
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #337AA6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0% 3%;
+    height: 90px;
+  }
+  
+  img {
+    margin-top: 2%;
+  }
+  
+  .right {
+    display: flex;
+    text-align: center;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  
+  #dropdown {
+    color: #132B40;
+    border: none;
+    font-size: 1rem;
+    border-radius: 10px;
+    width: 170px;
+    height: 40px;
+    padding: 5px 5px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    font-family: Roboto;
+    justify-content: center;
+  }
+  
+  option {
+    cursor: pointer;
+    background-color: white;
+    font-weight: bold;
+    font-family: Roboto;
+    font-size: 0.9rem;
+  }
+  
+  .left {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #home ,#login,#reg {
+    margin-top: 2px;
+    color: white;
+    text-decoration: none;
+    
+  }
+  
+  
+  #slideshow {
+    position: relative;
+    overflow: hidden;
+    height: 280px;
+  }
+  
+  #slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  #slideshow img:first-child {
+    opacity: 1;
+  }
+  .categories{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+    margin-top: 60px;
+  }
+  #computer,#accesorries,#phone{
+    width: 30%;
+  }
+  .sale{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+  .float_picture{
+    width: 60%;
+  }
+  #addto, #view{
+    color: #337AA6; font-weight: bold;
+  }
+  .buttons{
+    display:flex;justify-content: space-evenly; height: 8%; 
+  }
+  button{
+    display:flex;justify-content: space-between; align-items: center; border-radius: 15px;
+  }
+  .computer_title, .phone_title, .acc_title{
+    font-size: 20px; font-weight: bold; color:#132B40 ;
+  }
+  .sale_info {
+    width: 30%; margin-right: 10%;
+  }
+  .sale {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #sale_desc{
+    text-align: justify; line-height: 1.2;color: black;
+  }
+  #title_info {
+    font-weight: bolder; font-size: larger ; color:#132B40 ; }
+  @keyframes flash {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  #title_info {
+    animation-name: flash;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    line-height: 2;
+  }
+  .navbar-icons ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    }
+    .navbar-icons ul a {
+      display: flex;
+      list-style: none;
+      margin: 10px;
+      padding: 0;
+    }
+  
+  
+  
+    #slideshow {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+    
+    #slideshow .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    #slideshow .slide.active {
+      opacity: 1;
+    }
+    
+    .categories img ,.float_picture img{
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0% {
+        transform: translatey(0px);
+      }
+      50% {
+        transform: translatey(-10px);
+      }
+      100% {
+        transform: translatey(0px);
+      }
+    }
+    .categories img{
+    border-radius: 20px;
+    }
+  
+    footer {
+      display:flex;
+      width:100%;
+      background-color:#337AA6;
+      color: #fff;
+      padding:8px;
+    }
+    .social-icons{
+      display:inline-flex;
+      gap:20px;
+      align-items:center;
+      
+    }
+    .container2 .social-icons a i:hover{
+      transform:scale(1.3);
+      
+    }
+     
+    .container2 .social-icons a i{
+      font-size:40px;
+    }
+    .container2{
+      display:flex;
+      justify-content: space-around;
+      width: 100%;
+    
+    }
+    .container2 .rw1{
+      font-size: 20px;
+      
+    }
+    .container2 .rw1  li:hover{
+      transform: scale(1.1);
+    }
+    .container2 .rw1 a{
+      text-decoration: none;
+    }
+    
+    .container2 .rw1 li{
+      list-style: none;
+    }
+    #logo2{
+      height: 80px;
+      width: 180px;
+      margin-top: 20px;
+      border-radius: 20px;
+      
+    }
+    
