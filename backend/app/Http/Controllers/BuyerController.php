@@ -7,10 +7,9 @@ use App\Models\Item;
 
 class BuyerController extends Controller
 {
-    function getLaptops(){
-            $laptops = Items::all();
-            return json_encode(["laptops" => $laptops]);
-        }
-        
-
+    public function laptops()
+    {
+        $laptops = Item::all();
+        return response()->json(["laptops" => $laptops]);
+    }
 }

@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BuyerController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +27,6 @@ Route::group(["prefix" => "users"], function(){
 });
 
 Route::group(["prefix" => "buyers"], function(){
-    Route::post('/laptops', [BuyerController::class, "laptops"]);
+    Route::get('/laptops', [BuyerController::class, "laptops"]);
     Route::post('/login', [BuyerController::class, "addToCart"]);
    });
