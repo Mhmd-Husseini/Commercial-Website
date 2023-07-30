@@ -29,19 +29,22 @@
       </div>
         
     </nav>
-    <div class="con-reg">
+
+  <div class="con-reg">
     <div class="Register-block">
         <h1 class="Register-title">Create an account</h1>
         <h5 class="Register-description">Create an account to save your information for easier shopping.</h5>
-        <input id="Name" type="text" name="Name" placeholder="Name">
-        <input id="Email" type="text" name="Email" placeholder="Email">
-        <input id="Address" type="text" name="Address" placeholder="Address">
-        <input id="Password" type="password" name="Password" placeholder="Password">
-        <input id="Verify_password" type="password" name="Verify_password" placeholder="Verify Password">
-        <button id="Signup-button">Register</button>
+        <form id="registrationForm">
+            <input id="Name" type="text" name="Name" placeholder="Name">
+            <input id="Email" type="text" name="Email" placeholder="Email">
+            <input id="Address" type="text" name="Address" placeholder="Address">
+            <input id="Password" type="password" name="Password" placeholder="Password">
+            <button type="submit" id="Signup-button">Register</button>
+        </form>
         <div class="Pointing-to-forgetpassword">Already have an account? <a href="Login.html">Log in</a></div>
     </div>
-  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="js/register.js"></script>
 

@@ -63,6 +63,7 @@ body{
         }
 
 
+
     .Register-block{
       border: 10px solid #337AA6;
       border-radius: 30px;
@@ -79,7 +80,7 @@ body{
       
 
     }
-    .con-reg{
+    .con-reg, form{
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -126,4 +127,5 @@ body{
         color: white;
         font-size: 20px;
         cursor: pointer;
+        display: block;
     }
