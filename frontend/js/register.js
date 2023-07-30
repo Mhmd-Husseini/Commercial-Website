@@ -16,11 +16,12 @@ function signup(event) {
     data.append('address', address);
     data.append('password', password);
 
-    axios.post('http://127.0.0.1:8000/api/register', data)
+    axios.post('http://127.0.0.1:8000/api/users/register', data)
         .then((response) => {
             console.log(response.data);
             if (response.data.status === "success") {
                 alert("Signed up successfully!");
+                localStorage.setItem('user_id', response.data.user.id);
                 localStorage.setItem('token', response.data.authorisation.token);
                 window.location.href = 'index.html';
             } else {

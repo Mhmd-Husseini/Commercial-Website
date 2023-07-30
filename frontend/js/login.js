@@ -7,13 +7,14 @@ function login() {
       password: password
     };
 
-    axios.post('http://127.0.0.1:8000/api/login', data)
+    axios.post('http://127.0.0.1:8000/api/users/login', data)
     .then((response) => {
       console.log(response.data);
       if (response.data.status === 'success') {
         alert("Logged in successfully!");
+        localStorage.setItem('user_id', response.data.user.id);
         localStorage.setItem('token', response.data.authorisation.token);
-        
+
         if (response.data.user.role_id == 1) {
           window.location.href = 'admin.html';
         } else {
