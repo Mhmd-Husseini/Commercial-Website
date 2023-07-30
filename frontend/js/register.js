@@ -22,7 +22,7 @@ function signup(event) {
             if (response.data.status === "success") {
                 alert("Signed up successfully!");
                 localStorage.setItem('token', response.data.authorisation.token);
-                // window.location.href = 'index.html';
+                window.location.href = 'index.html';
             } else {
                 alert("Registration failed. Please try again.");
             }
@@ -32,5 +32,5 @@ function signup(event) {
             alert("An error occurred during registration. Please try again later.");
         });
 
-    return false; // Prevent the form from submitting normally
+    return false; 
 }

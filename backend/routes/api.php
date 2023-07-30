@@ -19,5 +19,12 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(["prefix" => "users"], function(){
  Route::post('/register', [AuthController::class, "register"]);
  Route::post('/login', [AuthController::class, "login"]);
+});
+
+Route::group(["prefix" => "buyers"], function(){
+    Route::post('/laptops', [BuyerController::class, "laptops"]);
+    Route::post('/login', [BuyerController::class, "addToCart"]);
+   });

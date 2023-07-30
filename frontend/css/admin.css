@@ -1,0 +1,150 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background-color: #f7f5f5;
+}
+
+.Container{
+    display: flex;
+}
+
+.Control-panel-options{
+    width: 20%;
+    height: 100vh;
+    color: white;
+    background-color: #132B40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logo{
+    padding: 80px 0;
+}
+
+.Options{
+    width: 100%;
+}
+
+.Category-Buttons{
+    padding: 15px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.Category-Buttons:hover{
+    background-color: #337AA6;
+}
+
+
+.Control-panel-info{
+    width: 80%;
+    height: 100vh;
+}
+
+
+.Nav-bar{
+    background-color: #337AA6;
+    color: #132B40;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+    box-sizing: content-box;
+}
+
+.List-block{
+    margin-top: 30px;
+}
+
+.List-name-and-controls{
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.List-controls{
+    display: flex;
+    gap: 10px;
+}
+
+.List-name{
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.Buttons{
+    background-color: #337AA6;
+    border: 2px solid #132B40;
+    border-radius: 5px;
+    padding: 7px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.Table-list{
+    height: 70vh;
+    overflow-y: scroll;
+    width: 90%;
+    margin: 15px 60px;
+    display: block;
+}
+
+.The-actual-list{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    border: 1px solid #dddddd;
+    padding: 10px;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+.Button-enabled{
+    background-color: #337AA6;
+}
+
+
+.Off-button{
+    background-color: #132B40;
+}
+
+.Add-block, .Edit-block, .Remove-block{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.Input-for-user  {
+    border: 0;
+    border-bottom: 2px solid black;
+    width: 30%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+
+
+.In-block-buttons{
+    background-color: #337AA6;
+    margin-top: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

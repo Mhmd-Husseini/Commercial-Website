@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@0,200;1,200&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <div class="Container">
+        <div class="Control-panel-options">
+            <div class="Logo">Admin</div>
+            <div class="Options">
+                <div class="Category-Buttons Button-enabled" id="List-of-laptops">List of Laptops</div>
+            </div>
+        </div>
+        <div class="Control-panel-info">
+            <div class="Nav-bar">
+                <div class="Admin">Administrator</div>
+                <div class="Logout">Logout</div>
+            </div>
+
+            <div class="List-block" id="List-of-laptops-block">
+                <div class="List-name-and-controls">
+                    <div class="List-name">List of users</div>
+                    <div class="List-controls">
+                        <div class="Buttons Add-laptop">Add</div>
+                        <div class="Buttons Edit-laptop">Edit</div>
+                        <div class="Buttons Remove-laptop" >Remove</div>
+                    </div>
+                </div>
+                <div class="Table-list">
+                    <table class="The-actual-list" id="User-list">
+                        <tr>
+                            <th>Laptop ID</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Description</th>                          
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</html>
