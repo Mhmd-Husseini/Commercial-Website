@@ -100,7 +100,7 @@ body{
         margin: 0;
     }
 
-    #Email, #Password, #Verify_password, #Last_name, #First_name  {
+    #Email, #Password, #Verify_password, #Name, #Address  {
         border: 0;
         border-bottom: 2px solid black;
         width: 80%;
