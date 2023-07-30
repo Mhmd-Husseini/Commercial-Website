@@ -12,15 +12,13 @@ function fetchLaptops() {
           laptopCard.classList.add("card");
   
           laptopCard.innerHTML = `
-            <div class="card">
                 <img src="${lap.cpu}"/>
-            </div>
-            <div class="card-title"><h3>${lap.description}</h3></div>
+            <div class="card-title"><h3>${(lap.description.toString())}</h3></div>
             <div class="card-title-classes"><h5>${lap.ram}</h5></div>
             <div class="card-title-classes"><h4>${lap.price}$</h4></div>
             <button  onclick="addToCart(${lap.id})" data-classid="$${lap.id}"> Add To Cart
             </button>
-            <button onclick="addToFavorites(${lap.id})" data-classid="$${lap.id}"> Add To Fav
+            <button onclick="addToCart(${lap.id}, '${lap.description}', ${lap.price})" data-classid="$${lap.id}"> Add To Cart</button>
             </button>
           `;
           laptopsContainer.appendChild(laptopCard);
@@ -29,7 +27,29 @@ function fetchLaptops() {
       .catch((error) => {
         console.error("Error:", error);
       });
+      
   }
+
   document.addEventListener("DOMContentLoaded", () => {
     fetchLaptops();
   });
+
+  function addToCart(id, description, price) {
+    let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+    const existingCartItem = cartItems.find((item) => item.id === id);
+    if (existingCartItem) {
+      existingCartItem.quantity += 1;
+    } else {
+      cartItems.push({
+        id: id,
+        description: description,
+        price: price,
+        quantity: 1,
+      });
+    }
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }
+  
+  
+
+
