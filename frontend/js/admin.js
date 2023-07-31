@@ -1,12 +1,8 @@
-// laptops.js
-
-// Function to fetch laptops data and display it in the table
 function fetchAndDisplayLaptops() {
     const tableBody = document.getElementById('tbody');
 
-    axios.get('http://127.0.0.1:8000/api/admin/laptops') // Replace 'your_api_url_here' with the actual API endpoint URL
+    axios.get('http://127.0.0.1:8000/api/admin/laptops') 
         .then(response => {
-            // Handle the response data
             const laptops = response.data.laptops;
 
             laptops.forEach(laptop => {
@@ -16,7 +12,7 @@ function fetchAndDisplayLaptops() {
                     <td>${laptop.price}</td>
                     <td>${laptop.quantity}</td>
                     <td>${laptop.ram}</td>
-                    <td><img src="${laptop.cpu}" alt="CPU Image"></td>
+                    <td>${laptop.cpu}</td>
                     <td>${laptop.brand_id}</td>
                     <td>
                         <button onclick="editLaptop(${laptop.id})">Edit</button>
@@ -35,8 +31,20 @@ function editLaptop(laptopId) {
     console.log(`Edit laptop with ID: ${laptopId}`);
 }
 
+window.onload = fetchAndDisplayLaptops;
+
+
 function deleteLaptop(laptopId) {
-    console.log(`Delete laptop with ID: ${laptopId}`);
+    axios.get(`http://127.0.0.1:8000/api/admin/delete/${laptopId}`)
+        .then(response => {
+            if(response.data.success){alert("Item deleted")};
+            location.reload();
+        })
+        .catch(error => {
+            console.error(error);
+        });
 }
 
-window.onload = fetchAndDisplayLaptops;
+
+
+

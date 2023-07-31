@@ -35,4 +35,5 @@ Route::group(["prefix" => "buyers"], function(){
 
 Route::group(["prefix" => "admin"], function(){
     Route::get('/laptops', [AdminController::class, "laptops"]);
+    Route::get('/delete/{id}', [AdminController::class, "delete"]);
    });
