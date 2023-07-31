@@ -10,7 +10,7 @@ body{
 }
 
 .Control-panel-options{
-    width: 20%;
+    width: 7%;
     height: 100vh;
     color: white;
     background-color: #132B40;
@@ -39,7 +39,7 @@ body{
 
 
 .Control-panel-info{
-    width: 80%;
+    width: 93%;
     height: 100vh;
 }
 

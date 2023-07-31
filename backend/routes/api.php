@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BuyerController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\AdminController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +33,6 @@ Route::group(["prefix" => "buyers"], function(){
     Route::post('/order', [OrderController::class, 'order']);
 });
 
-
+Route::group(["prefix" => "admin"], function(){
+    Route::get('/laptops', [AdminController::class, "laptops"]);
+   });

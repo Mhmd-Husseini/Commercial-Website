@@ -18,11 +18,11 @@ class OrderController extends Controller
             'shipping_address' => $shippingAddress,
             'user_id' => $userId,
         ]);
-        $orderId = $order->id;
+        $orderId = $order->id;   
 
         foreach ($cartItems as $cartItem) {
             Orders_items::create([
-                'order_id' => $orderId,
+                'order_id' => $orderId, 
                 'item_id' => $cartItem['item_id'],
                 'quantity' => $cartItem['quantity'],
             ]);
