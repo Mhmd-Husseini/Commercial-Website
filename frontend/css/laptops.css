@@ -19,8 +19,8 @@ body{
   }
   
   img {
-    margin-top: 2%;
     display: block;
+    border-radius: 15px;
   }
   
   .right {
@@ -93,7 +93,6 @@ body{
   }
 
     .wrapping-navbar-showroom .container-showroom{
-      /* margin-left: 50px; */
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -105,6 +104,7 @@ body{
       justify-content: space-evenly;
       flex-wrap: wrap;
       margin-left: 100px;
+      border-radius: 10px;
     }
   
     
@@ -145,13 +145,7 @@ body{
     .container2 .rw1  li:hover{
       transform: scale(1.1);
     }
-    .container2 .rw1 a{
-      text-decoration: none;
-    }
-    
-    .container2 .rw1 li{
-      list-style: none;
-    }
+   
     #logo2{
       height: 80px;
       width: 180px;

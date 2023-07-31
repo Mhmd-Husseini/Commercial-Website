@@ -26,5 +26,6 @@ function showCart() {
       tbody.appendChild(row);
     });
   }
-
   showCart();
+
+  
