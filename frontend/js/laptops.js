@@ -41,7 +41,7 @@ function fetchLaptops() {
       existingCartItem.quantity += 1;
     } else {
       cartItems.push({
-        item_id: id,
+        id: id,
         description: description,
         price: price,
         quantity: 1,
