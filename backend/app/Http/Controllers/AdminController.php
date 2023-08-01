@@ -23,4 +23,19 @@ class AdminController extends Controller
         $laptop->delete();
         return response()->json(['success' => true]);
     }
+
+    function add(Request $request){
+
+        $item = Item::create([
+            'price' => $request->price,
+            'description' => $request->description,
+            'quantity' => $request->quantity,
+            'ram' => $request->ram,
+            'cpu' => $request->cpu,
+            'brand_id' => $request->brand_id,
+        ]);
+        return response()->json(['success' => true]);
+    }
 }    
+
+
