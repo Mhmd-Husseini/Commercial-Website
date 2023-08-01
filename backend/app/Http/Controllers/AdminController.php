@@ -25,7 +25,6 @@ class AdminController extends Controller
     }
 
     function add(Request $request){
-
         $item = Item::create([
             'price' => $request->price,
             'description' => $request->description,
@@ -34,8 +33,11 @@ class AdminController extends Controller
             'cpu' => $request->cpu,
             'brand_id' => $request->brand_id,
         ]);
-        return response()->json(['success' => true]);
+
+        if ($item) {
+            return response()->json(['success' => true]);
+        } else {
+            return response()->json(['success' => false]); 
+        }
     }
-}    
-
-
+}

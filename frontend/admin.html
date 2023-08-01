@@ -25,6 +25,7 @@
             <div class="Table-list">
                 <table class="The-actual-list" id="User-list">
                          <th>ID</th>
+                         <th>Description</th>
                         <th>Price</th>
                         <th>Quantity</th>
                         <th>RAM</th>
@@ -33,13 +34,16 @@
                         <th>Action</th>
                     </tr>
                     <tbody id="laptop-to-add">
-                        <td>Laptop</td>
-                        <td><input id="price"></td>
-                        <td><input id="quant"></td>
-                        <td><input id="ram"></td>
-                        <td><input id="img"></td>
-                        <td><input id="brand_id"></td>
-                        <td><button id="add"></td>
+                        <tr>
+                            <td>Laptop</td>
+                            <td><input id="description" name="description" value="description"></input></td>
+                            <td><input id="price" name="price" value="price"></input></td>
+                            <td><input id="quant" name="quantity" value="quantity"></input></td>
+                            <td><input id="ram" name="ram" value="ram"></input></td>
+                            <td><input id="img" name="cpu" value="https://example.com/image.jpg"></input></td>
+                            <td><input id="brand_id" name="brand_id" value="brand_id"></input></td>
+                            <td><button id="add">ADD</button></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

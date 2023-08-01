@@ -45,6 +45,34 @@ function deleteLaptop(laptopId) {
         });
 }
 
+document.addEventListener('DOMContentLoaded', function () {
 
+document.getElementById('add').addEventListener('click', function () {
+    let price = document.getElementById('price').value;
+    let quantity = document.getElementById('quant').value;
+    let ram = document.getElementById('ram').value;
+    let cpu = document.getElementById('img').value;
+    let brand_id = document.getElementById('brand_id').value;
+    let description = document.getElementById('description').value;
 
+    let item = {
+        price: price,
+        quantity: quantity,
+        ram: ram,
+        cpu: cpu,
+        brand_id: brand_id,
+        description: description,
+    };
+    axios.post('http://127.0.0.1:8000/api/admin/add', item)
+        .then(response => {
+            if(response.data.success){
+            alert("Item Added Successfully")}
+            location.reload();
+        })
+        .catch(error => {
+            console.error(error);
+        });
+});
+
+})
 
