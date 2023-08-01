@@ -8,6 +8,12 @@ use App\Models\Item;
 
 class AdminController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth:api');
+    }
+    
     public function laptops()
     {
         $laptops = Item::all();

@@ -1,6 +1,8 @@
 function fetchAndDisplayLaptops() {
     const tableBody = document.getElementById('tbody');
-
+    let token = localStorage.getItem('token');
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+    
     axios.get('http://127.0.0.1:8000/api/admin/laptops') 
         .then(response => {
             const laptops = response.data.laptops;
@@ -63,6 +65,10 @@ document.getElementById('add').addEventListener('click', function () {
         brand_id: brand_id,
         description: description,
     };
+
+    let token = localStorage.getItem('token');
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
+
     axios.post('http://127.0.0.1:8000/api/admin/add', item)
         .then(response => {
             if(response.data.success){
@@ -73,6 +79,10 @@ document.getElementById('add').addEventListener('click', function () {
             console.error(error);
         });
 });
+})
 
+document.getElementById('logout').addEventListener('click', function () {
+    localStorage.clear();
+    window.location.href = 'login.html';
 })
 

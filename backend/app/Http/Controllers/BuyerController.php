@@ -7,6 +7,7 @@ use App\Models\Item;
 
 class BuyerController extends Controller
 {
+
     public function laptops()
     {
         $laptops = Item::all();

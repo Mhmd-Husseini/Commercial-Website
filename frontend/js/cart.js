@@ -47,6 +47,8 @@ function showCart() {
         formData.append(`cart_items[${index}][quantity]`, item.quantity);
     });
 
+    let token = localStorage.getItem('token');
+    axios.defaults.headers.common['Authorization'] = `Bearer ${token}`;
     axios.post('http://127.0.0.1:8000/api/buyers/order', formData,)
         .then(response => {
             console.log(response.data);
