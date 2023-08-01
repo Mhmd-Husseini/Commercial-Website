@@ -138,3 +138,8 @@ body{
         margin-right: 15px;
         border-radius: 15px;
     }
+    #logout{
+        text-decoration: none;
+        color:#f7f5f5
+      }
+      
